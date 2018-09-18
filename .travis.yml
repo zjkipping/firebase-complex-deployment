@@ -18,6 +18,15 @@ script:
 after_success:
   - firebase use dev
   - firebase deploy --token $FIREBASE_TOKEN
+  - ng build -c prod-one
+  - firebase use prod-one
+  - firebase deploy --token $FIREBASE_TOKEN
+  - ng build -c prod-two
+  - firebase use prod-two
+  - firebase deploy --token $FIREBASE_TOKEN
+  - ng build -c prod-three
+  - firebase use prod-three
+  - firebase deploy --token $FIREBASE_TOKEN
 
 notifications:
   email:
