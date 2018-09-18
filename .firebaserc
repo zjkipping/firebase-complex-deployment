@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "dev": "fir-complex-deploy-dev",
+    "prod-one": "fir-complex-deploy-one",
+    "prod-two": "fir-complex-deploy-two",
+    "prod-three": "fir-complex-deploy-three"
+  }
+}
